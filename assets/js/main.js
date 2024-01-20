@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  
   /* Teks job */
 
   const typingText = document.getElementById("job");

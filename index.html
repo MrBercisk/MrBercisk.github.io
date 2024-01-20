@@ -34,12 +34,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
   </head>
   <body>
     <!-- Header -->
     <header id="header" class="header fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4">
-        <div class="container-fluid">
+        <div class="container">
           <h3 class="navbar-brand text-light pt-3">BSPortfolio</h3>
           <button
             class="navbar-toggler bg-light"
@@ -71,10 +72,7 @@
     <!-- End Section -->
 
     <!-- Hero Section -->
-    <section
-      id="hero"
-      class="hero d-flex flex-column align-items-center bg-dark pt-5 mb-4"
-    >
+    <section id="hero" class="hero align-items-center bg-dark pt-5 mb-4">
       <div class="container-fluid">
         <div
           class="row justify-content-center px-5 mt-4"
@@ -82,7 +80,7 @@
           data-aos-delay="1500"
         >
           <div class="col-lg-6 text-center text-light mt-4">
-            <div class="image-container mt-3 ">
+            <div class="image-container mt-3">
               <h2><span>I'm Bimo Satrio Putra</span></h2>
               <h3>Web Developer</h3>
               <hr class="border border-primary border-2 opacity-50" />
@@ -192,7 +190,11 @@
     <!-- End Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-light text-dark sect-pt5 px-4" data-aos="fade-left">
+    <section
+      id="skills"
+      class="bg-light text-dark sect-pt5 px-4"
+      data-aos="fade-left"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-3">
@@ -276,40 +278,6 @@
           <div class="col-md-4 mb-3">
             <div class="work-box" data-aos="zoom-in-down">
               <a
-                href="assets/img/Sikokemas.png"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox" 
-              >
-                <div class="work-img">
-                  <img
-                    src="assets/img/Sikokemas.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">
-                      SIKOKEMAS (Sistem Informasi Konsultasi Kesehatan
-                      Masyarakat)
-                    </h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"
-                        >Full Stack Developer Using Codeigniter 3 & MySQL</span
-                      >
-                      <span class="w-date">October. 2021</span>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="work-box" data-aos="zoom-in-down">
-              <a
                 href="assets/img/siamang_home.jpeg"
                 data-gallery="portfolioGallery"
                 class="portfolio-lightbox"
@@ -336,7 +304,6 @@
                       <span class="w-date">June. 2023</span>
                     </div>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -371,6 +338,39 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 mb-3">
+            <div class="work-box" data-aos="zoom-in-down">
+              <a
+                href="assets/img/Sikokemas.png"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img
+                    src="assets/img/Sikokemas.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      SIKOKEMAS (Sistem Informasi Konsultasi Kesehatan
+                      Masyarakat)
+                    </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"
+                        >Full Stack Developer Using Codeigniter 3 & MySQL</span
+                      >
+                      <span class="w-date">October. 2021</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -380,38 +380,42 @@
     <!-- Experience Section -->
 
     <section id="experience" class="sect-pt5 px-4" data-aos="fade-down">
-      <div class="main-section bg-lightgrey">
+      <div class="main-section">
         <div class="container">
-          <div class="edu-exp">
-            <h2 class="heading-text text-center">Education</h2>
-            <div class="line-mf mb-3"></div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>Bina Sarana Informatika University</h2>
-                <p>(Best Graduate Of Information Systems 2023)</p>
-                <h3>2020-2023</h3>
-                <p>Associate Degree in Information Systems</p>
+          <div class="row">
+            <div class="col-md-6 edu-exp">
+              <h2 class="heading-text text-center">Education</h2>
+              <div class="line-mf mb-3"></div>
+              <div class="experience-list">
+                <div class="experience-content">
+                  <h2>Bina Sarana Informatika University</h2>
+                  <p>(Best Graduate Of Information Systems 2023)</p>
+                  <h3>2020-2023</h3>
+                  <p>Associate Degree in Information Systems</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="edu-exp">
-            <h2 class="heading-text text-center">Experience</h2>
-            <div class="line-mf mb-3"></div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>The Office Of Communication, Informatics and Encoding Yogyakarta City</h2>
-                <h3>2022-2023</h3>
-                <p>Full Stack Developer</p>
+            <div class="col-md-6 edu-exp">
+              <h2 class="heading-text text-center">Experience</h2>
+              <div class="line-mf mb-3"></div>
+              <div class="experience-list">
+                <div class="experience-content">
+                  <h2>
+                    The Office Of Communication, Informatics and Encoding
+                    Yogyakarta City
+                  </h2>
+                  <h3>2022-2023</h3>
+                  <p>Full Stack Developer</p>
+                </div>
+              </div>
+              <div class="experience-list">
+                <div class="experience-content">
+                  <h2>Kabar Group Indonesia</h2>
+                  <h3>2020-2021</h3>
+                  <p>Team IT</p>
+                </div>
               </div>
             </div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>Kabar Group Indonesia</h2>
-                <h3>2020-2021</h3>
-                <p>Team IT</p>
-              </div>
-            </div>
-           
           </div>
         </div>
       </div>
@@ -425,7 +429,7 @@
           <h2 class="display-4 text-center mb-5">Contact Me</h2>
           <div class="row">
             <div class="col-md-6 mx-auto">
-              <form>
+              <form id="myForm">
                 <div class="mb-3">
                   <label for="name" class="form-label">Your Name</label>
                   <input
@@ -433,6 +437,7 @@
                     class="form-control"
                     id="name"
                     placeholder="Enter your name"
+                    name="name"
                   />
                 </div>
                 <div class="mb-3">
@@ -442,6 +447,7 @@
                     class="form-control"
                     id="email"
                     placeholder="Enter your email"
+                    name="email"
                   />
                 </div>
                 <div class="mb-3">
@@ -451,9 +457,17 @@
                     id="message"
                     rows="5"
                     placeholder="Type your message"
+                    name="message"
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mb-3" onclick="submitForm()">Submit</button>
+                <button
+                  type="submit"
+                  class="btn btn-primary mb-3"
+                  value="Submit"
+                  onclick="submitForm()"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>
@@ -467,19 +481,38 @@
 
     <footer id="footer" class="footer bg-dark">
       <div class="container d-flex justify-content-center py-5">
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <a href="https://www.linkedin.com/in/bimosatrioputrapradana/"><i class="fab fa-linkedin text-light"></i></a>
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-floating mx-2"
+          style="background-color: #54456b"
+        >
+          <a href="https://www.linkedin.com/in/bimosatrioputrapradana/"
+            ><i class="fab fa-linkedin text-light"></i
+          ></a>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <a href="https://github.com/MrBercisk"><i class="fab fa-github text-light"></i></a>
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-floating mx-2"
+          style="background-color: #54456b"
+        >
+          <a href="https://github.com/MrBercisk"
+            ><i class="fab fa-github text-light"></i
+          ></a>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-floating mx-2"
+          style="background-color: #54456b"
+        >
           <i class="fab fa-instagram"></i>
         </button>
       </div>
-  
+
       <!-- Copyright -->
-      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div
+        class="text-center text-white p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
         © 2024 Copyright:
         <a class="text-white" href="">BS</a>
       </div>
@@ -519,5 +552,44 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      function submitForm() {
+        var formData = new FormData(document.getElementById("myForm"));
+        sendDataToGoogleSheets(formData);
+      }
+
+      function sendDataToGoogleSheets(formData) {
+        var scriptURL =
+          "https://script.google.com/macros/s/AKfycbx7tG5jDrCjgq5IfHp0h7UlKQeKvwaLj4ebgRkRHrc9-fWN1xo1JgYjl8LozbezBQyn/exec";
+        fetch(scriptURL, { method: "POST", body: formData })
+          .then((response) => {
+            if (response.ok) {
+              // Menampilkan notifikasi SweetAlert2 ketika data berhasil terkirim
+              Swal.fire({
+                icon: "success",
+                title: "Sukses",
+                text: "Data berhasil terkirim!",
+              });
+            } else {
+              // Menampilkan notifikasi SweetAlert2 ketika terjadi kesalahan
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Terjadi kesalahan saat mengirim data.",
+              });
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            // Menampilkan notifikasi SweetAlert2 ketika terjadi kesalahan
+            Swal.fire({
+              icon: "error",
+              title: "Error",
+              text: "Terjadi kesalahan saat mengirim data.",
+            });
+          });
+      }
+    </script>
   </body>
 </html>
