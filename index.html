@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
@@ -35,13 +35,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
+    <link
+      rel="stylesheet"
+      href="/assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header id="header" class="header fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4">
+    <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-light px-4">
         <div class="container">
-          <h3 class="navbar-brand text-light pt-3">BSPortfolio</h3>
+          <h3 class="navbar-brand pt-3">
+            <a href="/">Bimo Satrio Putra Pradana</a>
+          </h3>
           <button
             class="navbar-toggler bg-light"
             type="button"
@@ -58,7 +64,6 @@
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
-              <a class="nav-link active" href="#">Home</a>
               <a class="nav-link scrollto" href="#about">About</a>
               <a class="nav-link scrollto" href="#work">Project</a>
               <a class="nav-link scrollto" href="#experience">Experience</a>
@@ -72,17 +77,16 @@
     <!-- End Section -->
 
     <!-- Hero Section -->
-    <section id="hero" class="hero align-items-center bg-dark pt-5 mb-4">
+    <section id="hero" class="hero align-items-center bg-dark mb-4">
       <div class="container-fluid">
         <div
-          class="row justify-content-center px-5 mt-4"
+          class="row justify-content-center px-5"
           data-aos="fade-up"
           data-aos-delay="1500"
         >
-          <div class="col-lg-6 text-center text-light mt-4">
+          <div class="col-lg-6 text-center text-light mt-5">
             <div class="image-container mt-3">
-              <h2><span>I'm Bimo Satrio Putra</span></h2>
-              <h3>Web Developer</h3>
+              <h2>Hello, I'm <span>Bimo Satrio </span></h2>
               <hr class="border border-primary border-2 opacity-50" />
               <p id="job" class="job text-light"></p>
               <br />
@@ -99,105 +103,15 @@
 
     <!-- End Section -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt5 px-4" data-aos="fade-down">
-      <div class="card" style="width: 100%; height: 100%">
-        <div class="row">
-          <div class="col-sm-12 px-5">
-            <div class="row mt-3">
-              <div class="col-md-6 pb-5 pt-5">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div
-                      class="about-img d-flex align-items-center justify-content-center mb-3"
-                    >
-                      <img
-                        src="assets/img/foto1.jpg"
-                        class="img-fluid rounded b-shadow-a"
-                        width="60%"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p>
-                        <span class="title-s">Name: </span>
-                        <span>Bimo Satrio Putra Pradana</span>
-                      </p>
-                      <p>
-                        <span class="title-s">Profile: </span>
-                        <span>Programmer</span>
-                      </p>
-                      <p>
-                        <span class="title-s">Email: </span>
-                        <span>bimosatrio814@gmail.com</span>
-                      </p>
-                      <p>
-                        <span class="title-s">Phone: </span>
-                        <span>(62)81291204919</span>
-                      </p>
-                      <p>
-                        <span class="title-s">Adress: </span>
-                        <span>Yogyakarta, Indonesia</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">
-                    <i class="fas fa-arrow-right text-primary"></i> Skills
-                  </p>
-                  <ul>
-                    <li>
-                      <b>Soft Skills</b> : Good Communication, Time Management,
-                      Teamwork, Creativity, Problem Solving, Initiative,
-                      Responsibility.
-                    </li>
-                    <li>
-                      <b>Hard Skills</b> : HTML, CSS, JavaScript, PHP, MySQL,
-                      Git, Python, Codeigniter, Canva, Bootstrap, Microsoft
-                      Office, VSCode, Blogger.
-                    </li>
-                    <li><b>Language</b> : Indonesian & English</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6 pt-5 pb-5">
-                <h4 class="text-center">About Me</h4>
-                <div class="line-mf mb-3"></div>
-                <div class="about-me pt-4 pt-md-0">
-                  <p class="lead text-justify">
-                    An Information Systems D3 graduate with experience in
-                    freelance work, and internships as a programmer at the
-                    Department of Communication, Information of Yogyakarta City.
-                    Possesses strong analytical skills, adept at
-                    problem-solving, system design, and collaborative teamwork.
-                    Familiar with JavaScript,PHP,Codeigniter,MySQL,SDLC,UML.
-                    Exhibits a keen interest in pursuing a career in information
-                    technology as a Web Developer or the industrial sector, and
-                    I am highly receptive to exploring other career
-                    opportunities.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Section -->
-
     <!-- Skills Section -->
     <section
       id="skills"
-      class="bg-light text-dark sect-pt5 px-4"
+      class="bg-light text-dark sect-pt5 px-5"
       data-aos="fade-left"
     >
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-4">
             <div class="skill-card bg-light text-center">
               <i class="fas fa-code display-4 text-primary"></i>
               <h3>Web Development</h3>
@@ -207,7 +121,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-4">
             <div class="skill-card bg-light text-center">
               <i class="fas fa-laptop display-4 text-primary"></i>
               <h3>Responsive Design</h3>
@@ -217,7 +131,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-4">
             <div class="skill-card bg-light text-center">
               <i class="fas fa-gear display-4 text-primary"></i>
               <h3>Full Stack Dev</h3>
@@ -227,7 +141,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-4">
             <div class="skill-card bg-light text-center">
               <i class="fas fa-database display-4 text-primary"></i>
               <h3>Database Management</h3>
@@ -237,7 +151,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-4">
             <div class="skill-card bg-light text-center">
               <i class="fas fa-pen display-4 text-primary"></i>
               <h3>Design and Modeling</h3>
@@ -261,113 +175,229 @@
       </div>
     </section>
 
-    <!-- End Section -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt5 px-4" data-aos="fade-down">
+      <div class="card" style="width: 100%; height: 100%">
+        <div class="row">
+          <div class="col-sm-12 px-5">
+            <div class="row mt-3">
+              <div class="col-md-6 pb-5 pt-5">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div
+                      class="about-img d-flex align-items-center justify-content-center mb-3"
+                    >
+                      <img
+                        src="assets/img/foto1.jpg"
+                        class="img-fluid rounded hexagon-image b-shadow-a"
+                        width="60%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p>
+                        <span class="title-s">Name:</span> Bimo Satrio Putra
+                        Pradana
+                      </p>
+                      <p>
+                        <span class="title-s">Title:</span> Associate Degree
+                        Computer (A.Md.Kom.)
+                      </p>
+                      <p>
+                        <span class="title-s">Email:</span>
+                        bimosatrio814@gmail.com
+                      </p>
+                      <p><span class="title-s">Phone:</span> (62)81291204919</p>
+                      <p>
+                        <span class="title-s">Address:</span> Yogyakarta,
+                        Indonesia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-5 pb-5">
+                <h4 class="text-center">About Me</h4>
+                <div class="line-mf mb-3"></div>
+                <div class="about-me pt-4 pt-md-0">
+                  <p class="lead text-justify">
+                    Hello, I'm a Web Developer with experience in freelance work
+                    and internships as a Full Stack Developer at the Department
+                    of Communication and Information of Yogyakarta City. My
+                    journey in web development has equipped me with a skill set
+                    proficient in HTML, CSS, JavaScript, PHP, and understanding
+                    of SDLC and UML. I have a serious passion for Web
+                    Development, Full Stack Development, and Back End
+                    Development. Specializing in Vue.js for front-end,
+                    CodeIgniter 4 for back-end, and deepening expertise in
+                    Golang. Good analytical problem-solving skills and
+                    collaborating seamlessly within teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Hard skills -->
+
+    <section class="icon bg-dark mt-4" id="icon">
+      <div class="container">
+        <h2 class="mb-3">Skills</h2>
+        <div class="row px-4 mt-2">
+          <div class="col-md-12">
+            <div class="icon-container" data-aos="fade-left">
+              <i class="fa-brands fa-php"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-golang"></i>
+              <i class="fa-brands fa-vuejs"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+              <i class="fa-brands fa-uikit"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- End Section -->
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt5 px-4">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title">Project</h3>
+              <h3 class="title">Projects</h3>
               <div class="line-mf mb-5"></div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="work-box" data-aos="zoom-in-down">
-              <a
-                href="assets/img/siamang_home.jpeg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img
-                    src="assets/img/siamang_home.jpeg"
-                    alt=""
-                    class="img-fluid"
-                  />
+          <div class="col-md-4 mb-3 d-flex">
+            <div class="card flex-fill" data-aos="zoom-in-down">
+              <img src="assets/img/siamang_home.jpeg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  SIAMANG (Sistem Informasi Aplikasi Magang) Kominfo Kota Yogyakarta
+                </h5>
+                <p class="card-text">
+                  The Internship Application Information System (SI AMANG) makes
+                  it easy for agency or system managers to manage the available
+                  fields and categories, mentor data for each category, and
+                  information about internships.
+                </p>
+                <div class="detail">
+                  <p><strong>Language:</strong> PHP, JavaScript</p>
+                  <p><strong>Framework:</strong> Codeigniter 4</p>
+                  <p><strong>Project:</strong> Team Project</p>
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">
-                      SIAMANG (Sistem Informasi Aplikasi Magang)
-                    </h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"
-                        >Full Stack Developer Using Codeigniter 4 & MySQL</span
-                      >
-                      /
-                      <span class="w-date">June. 2023</span>
-                    </div>
-                  </div>
-                </div>
+                <a href="#" class="btn btn-primary">Repository</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box" data-aos="zoom-in-down">
-              <a
-                href="assets/img/Cover.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/Cover.jpg" alt="" class="img-fluid" />
+          <div class="col-md-4 mb-3 d-flex">
+            <div class="card flex-fill" data-aos="zoom-in-down">
+              <img src="assets/img/Cover.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  SIMPAN (Sistem Informasi Presensi Karyawan) Mobile Apps &
+                  Website
+                </h5>
+                <p class="card-text">
+                  The Employee Attendance Information System simplifies employee
+                  attendance tracking, providing a user-friendly solution for
+                  businesses.
+                </p>
+                <div class="detail">
+                  <p><strong>Language:</strong> PHP, JavaScript, Dart</p>
+                  <p><strong>Framework:</strong> Codeigniter 3 & Flutter</p>
+                  <p><strong>Project:</strong> Team Project(College Exam Project)</p>
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">
-                      SIMPAN (Sistem Informasi Presensi Karyawan) Mobile Apps &
-                      Website
-                    </h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"
-                        >UI/UX Designer Using Figma, Mobile Apps Using Flutter &
-                        Website Codeigniter 3</span
-                      >
-                      <span class="w-date"> August. 2022</span>
-                    </div>
-                  </div>
-                </div>
+                <a href="#" class="btn btn-primary">Repository</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="work-box" data-aos="zoom-in-down">
-              <a
-                href="assets/img/Sikokemas.png"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img
-                    src="assets/img/Sikokemas.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+          <div class="col-md-4 mb-3 d-flex">
+            <div class="card flex-fill" data-aos="zoom-in-down">
+              <img src="assets/img/Sikokemas.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  SIKOKEMAS (Sistem Informasi Konsultasi Kesehatan Masyarakat)
+                </h5>
+                <p class="card-text">
+                  This system offers various functionalities, including
+                  appointment scheduling, patient registration, medical record
+                  management, and queue management.
+                </p>
+                <div class="detail">
+                  <p><strong>Language:</strong> PHP, JavaScript</p>
+                  <p><strong>Framework:</strong> Codeigniter 4</p>
+                  <p><strong>Project:</strong> Team Project(College Exam Project)</p>
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">
-                      SIKOKEMAS (Sistem Informasi Konsultasi Kesehatan
-                      Masyarakat)
-                    </h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"
-                        >Full Stack Developer Using Codeigniter 3 & MySQL</span
-                      >
-                      <span class="w-date">October. 2021</span>
-                    </div>
-                  </div>
+                <a href="https://github.com/MrBercisk/Sikokemas" class="btn btn-primary">Repository</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 d-flex">
+            <div class="card flex-fill" data-aos="zoom-in-down">
+              <img src="assets/img/kulinerku.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Kulinerku</h5>
+                <p class="card-text">
+                  This application system is used to input guest orders about
+                  what food is ordered at a restaurant
+                </p>
+                <div class="detail">
+                  <p><strong>Language:</strong> PHP, JavaScript</p>
+                  <p><strong>Framework:</strong> Codeigniter 4 & Vue JS</p>
+                  <p>
+                    <strong>Project:</strong> Solo Project(Practice Rest API)
+                  </p>
                 </div>
+                <a href="https://github.com/MrBercisk/kulinerku-vue-CI-4-API" class="btn btn-primary">Repository</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 d-flex">
+            <div class="card flex-fill" data-aos="zoom-in-down">
+              <img src="assets/img/golang.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">To Do List</h5>
+                <p class="card-text">
+                  This application system is used to input our to do list.
+                </p>
+                <div class="detail">
+                  <p><strong>Language:</strong> Golang</p>
+                  <p><strong>Framework:</strong> Native</p>
+                  <p>
+                    <strong>Project:</strong> Solo Project(Practice Rest API)
+                  </p>
+                </div>
+                <a href="https://github.com/MrBercisk/golangapi-todos" class="btn btn-primary">Repository</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 d-flex">
+            <div class="card flex-fill" data-aos="zoom-in-down">
+              <img src="assets/img/spahome.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">BSpa Massage</h5>
+                <p class="card-text">This website provides detailed descriptions, pricing information, and online booking options, allowing users to plan and customize their spa experiences effortlessly and special promotions for members.</p>
+                <div class="detail">
+                  <p><strong>Language:</strong> PHP, JavaScript</p>
+                  <p><strong>Framework:</strong> Codeigniter 4</p>
+                  <p>
+                    <strong>Project:</strong> Solo Project(Practice Rest API)
+                  </p>
+                </div>
+                <a href="#" class="btn btn-primary">Detail</a>
               </div>
             </div>
           </div>
@@ -423,7 +453,7 @@
     <!-- End Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="sect-pt5 px-4 mt-3" data-aos="fade-up">
+    <section id="contact" class="contact sect-pt5 px-4 mt-3" data-aos="fade-up">
       <div class="card" style="width: 100%; height: 100%">
         <div class="container">
           <h2 class="display-4 text-center mb-5">Contact Me</h2>
@@ -462,7 +492,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="btn btn-primary mb-3"
+                  class="btn btn-primary float-end mb-5"
                   value="Submit"
                   onclick="submitForm()"
                 >
@@ -510,11 +540,9 @@
 
       <!-- Copyright -->
       <div
-        class="text-center text-white p-3"
-        style="background-color: rgba(0, 0, 0, 0.2)"
+        class="text-center text-white p-3""
       >
-        © 2024 Copyright:
-        <a class="text-white" href="">BS</a>
+      BIMO SATRIO PUTRA PRADANA ©2024
       </div>
     </footer>
 
